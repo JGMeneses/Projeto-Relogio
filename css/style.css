@@ -1,0 +1,197 @@
+/*body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282828;
+}
+
+.relogio {
+  width: 30rem;
+  height: 30rem;
+  margin: 48px;
+  padding: 1.5rem;
+  border: 6px solid #282828;
+  border-radius: 50%;
+  box-shadow: -8px -8px 12px rgba(67, 67, 67, 0.4),
+    inset 8px 8px 12px rgba(0, 0, 0, 0.3),
+    inset -8px -8px 12px rgba(67, 67, 67, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ponteiroExterno{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #282828;
+}
+
+.ponteiro-externo ::before,
+.ponteiro-externo ::after,
+.ponteiro-externo  .marking {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-color: #bdbdbd;
+    z-index: 0;
+    left: 49%;
+
+}
+
+.ponteiro-externo ::after {
+    transform: rotate(90deg);
+}
+
+.ponteiro-externo  .marking{
+    width: 2px;
+}
+
+.ponteiro-externo  .marking.marking-one{
+    transform: rotate(30deg);
+}
+
+.ponteiro-externo  .marking.marking-two{
+    transform: rotate(60deg);
+}
+.ponteiro-externo  .marking.marking-three{
+    transform: rotate(120deg);
+}
+.ponteiro-externo  .marking.marking-four{
+    transform: rotate(150deg);
+}
+
+.ponteiro-externo  .marking.marcadorDeSegundos{
+    background-color: transparent;
+    z-index: 1;
+}
+
+.ponteiro-externo  .marking.marcadorDeSegundos::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 32px;
+    top: -2px;
+    left: -2px;
+    background-color: #3db9db;
+}
+
+.ponteiro-interno {
+    position: absolute;
+    top: 32%;
+    left: 9.5%;
+    width: 80%;
+    color: #ffffff;
+    font-size: 96pt;
+    font-weight: 700;
+    text-align: center;
+}*/ 
+
+* {
+  font-family: "Roboto";
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282828;
+}
+
+.relogio {
+  width: 30rem;
+  height: 30rem;
+  margin: 48px;
+  padding: 1.5rem;
+  border: 6px solid #282828;
+  border-radius: 50%;
+  box-shadow: -8px -8px 12px rgba(67, 67, 67, 0.4),
+    inset 8px 8px 12px rgba(0, 0, 0, 0.3),
+    inset -8px -8px 12px rgba(67, 67, 67, 0.4), 8px 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ponteiroExterno{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #282828;
+}
+
+.ponteiroExterno::before,
+.ponteiroExterno::after,
+.ponteiroExterno .marking {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #bdbdcb;
+  z-index: 0;
+  left: 49%;
+}
+
+.ponteiroExterno::after {
+  transform: rotate(90deg);
+}
+
+.ponteiroExterno.marking {
+  width: 2px;
+}
+
+.ponteiroExterno .marking.marking-one {
+  transform: rotate(30deg);
+}
+
+.ponteiroExterno .marking.marking-two {
+  transform: rotate(60deg);
+}
+
+.ponteiroExterno .marking.marking-three {
+  transform: rotate(120deg);
+}
+
+.ponteiroExterno .marking.marking-four {
+  transform: rotate(150deg);
+}
+
+.ponteiroExterno .marking-seconds {
+  background-color: transparent;
+  z-index: 1;
+}
+
+.ponteiroExterno .marking-seconds::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 32px;
+  top: -2px;
+  left: -2px;
+  background-color: #3bd9d9;
+}
+
+.ponteiroInterno {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #282828;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ponteiroInterno .Hora {
+  position: absolute;
+  top: 32%;
+  left: 9.5%;
+  width: 80%;
+  color: #e9e2e2;
+  font-size: 96pt;
+  font-weight: 700;
+  text-align: center;
+}
